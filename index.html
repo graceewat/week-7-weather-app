@@ -3,38 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="Stylesheet" href="src/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="src/style.css" />
     <title>Grace's weather app</title>
   </head>
   <body>
-    <header>
-      <form>
-        <input type="search" placeholder="Please enter a city..." required />
-        <input type="submit" value="search" />
-      </form>
-    </header>
-    <main>
-      <div>
-        <h1>Welcome to the Clima app</h1>
-        <h2>Shorts and t-shirt weather 😎</h2>
-        <p>
-          Tuesday 14:49 <br />
-          Scattered clouds <br />
-          Humidity: 66% <br />
-          Wind: 3.13 Km/h
-        </p>
-      </div>
-      <div>☀️ 21°C</div>
-    </main>
-    <footer>
-      This app was coded by
-      <a href="https://github.com/graceewat" target="_blank">Grace Waterman</a>,
-      open-sourced on
-      <a href="https://github.com/graceewat/week-7-weather-app" target="_blank"
-        >GitHub</a
-      >
-      and hosted on
-      <a href="https://graces-clima-app.netlify.app" target="_blank">Netlify</a>
-    </footer>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input type="search" placeholder="Please enter a city..." required />
+          <input type="submit" value="search" />
+        </form>
+      </header>
+      <main>
+        <div>
+          <h1>Welcome to the Clima app</h1>
+          <h2>Shorts and t-shirt weather 😎</h2>
+          <p>
+            Tuesday 14:49 <br />
+            Scattered clouds <br />
+            Humidity: 66% <br />
+            Wind: 3.13 Km/h
+          </p>
+        </div>
+        <div>☀️ 21°C</div>
+      </main>
+      <footer>
+        This app was coded by
+        <a href="https://github.com/graceewat" target="_blank">Grace Waterman</a
+        >, open-sourced on
+        <a
+          href="https://github.com/graceewat/week-7-weather-app"
+          target="_blank"
+          >GitHub</a
+        >
+        and hosted on
+        <a href="https://graces-clima-app.netlify.app" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
   </body>
 </html>
