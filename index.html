@@ -15,11 +15,12 @@
   <body>
     <div class="weather-app">
       <header>
-        <form class="search-form">
+        <form class="search-form" id="search-form">
           <input
             type="search"
             placeholder="Please enter a city..."
             required
+            id="search-input"
             class="search-form-input"
           />
           <input type="submit" value="Search" class="search-form-button" />
@@ -27,7 +28,9 @@
       </header>
       <main>
         <div>
-          <h1 class="weather-app-city">Welcome to the Clima app</h1>
+          <h1 class="weather-app-city" id="weather-app-city">
+            Welcome to the Clima app
+          </h1>
           <div class="weather-app-data">
             <div class="weather-app-temp">
               <div class="weather-app-degrees">21</div>
@@ -59,5 +62,6 @@
         >
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
