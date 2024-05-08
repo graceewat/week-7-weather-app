@@ -66,7 +66,7 @@ function whattowear(temp) {
   if (temp > 25) {
     clothingElement.innerHTML = `Light shorts and t-shirt weather 😎`;
   } else if (15 < temp && temp < 25) {
-    clothingElement.innerHTML = `You'll probably need a trousers and a jacket! 👖`;
+    clothingElement.innerHTML = `You'll probably need trousers and a jacket! 👖`;
   } else if (5 < temp && temp < 15) {
     clothingElement.innerHTML = `You'll need a coat!🧥`;
   } else if (temp < 5) {
