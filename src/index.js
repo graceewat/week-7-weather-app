@@ -17,6 +17,7 @@ function refreshWeather(response) {
   let temperatureElement = document.querySelector("#temperature");
   let temperature = response.data.temperature.current;
   temperatureElement.innerHTML = Math.round(temperature);
+  whattowear(temperature);
   //change city
   let cityElement = document.querySelector("#weather-app-city");
   cityElement.innerHTML = response.data.city;
@@ -58,4 +59,17 @@ function formatDate(date) {
     minutes = `0${minutes}`;
   }
   return `${day} ${hours}:${minutes}`;
+}
+
+function whattowear(temp) {
+  let clothingElement = document.querySelector("#weather-app-clothing");
+  if (temp > 25) {
+    clothingElement.innerHTML = `Light shorts and t-shirt weather 😎`;
+  } else if (15 < temp && temp < 25) {
+    clothingElement.innerHTML = `You'll probably need a trousers and a jacket! 👖`;
+  } else if (5 < temp && temp < 15) {
+    clothingElement.innerHTML = `You'll need a coat!🧥`;
+  } else if (temp < 5) {
+    clothingElement.innerHTML = `Winter coat time! Layer up 🥶`;
+  }
 }
