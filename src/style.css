@@ -87,6 +87,12 @@ main {
   text-align: center;
   color: #f95959;
 }
+#conditions {
+  display: inline-block;
+}
+#conditions:first-letter {
+  text-transform: uppercase;
+}
 footer {
   padding-top: 30px;
   border-top: 1px solid #f9f7fe;
